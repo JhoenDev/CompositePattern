@@ -1,5 +1,5 @@
 public interface Unit {
     void displayDetails();
-    int getStudentCount();
-    double getBudget();
+    int calculateStudentCount();
+    double calculateBudget();
 }

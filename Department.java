@@ -22,19 +22,19 @@ public class Department implements Unit {
     }
 
     @Override
-    public int getStudentCount() {
+    public int calculateStudentCount() {
         int count = 0;
         for (Unit unit : units) {
-            count += unit.getStudentCount();
+            count += unit.calculateStudentCount();
         }
         return count;
     }
 
     @Override
-    public double getBudget() {
+    public double calculateBudget() {
         double totalBudget = 0;
         for (Unit unit : units) {
-            totalBudget += unit.getBudget();
+            totalBudget += unit.calculateBudget();
         }
         return totalBudget;
     }

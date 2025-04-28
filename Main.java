@@ -10,22 +10,22 @@ public class Main {
         Teacher t2 = new Teacher("Prof. Jerry Esperanza", "Software Engineering", 64000);
 
         //departments
-        Department csDepartment = new Department("Computer Science Department");
-        csDepartment.addUnit(t1);
-        csDepartment.addUnit(s1);
-        csDepartment.addUnit(s2);
+        Department csDep = new Department("Computer Science Department");
+        csDep.addUnit(t1);
+        csDep.addUnit(s1);
+        csDep.addUnit(s2);
 
-        Department itDepartment = new Department("Information Technology Department");
-        itDepartment.addUnit(t2);
-        itDepartment.addUnit(s3);
+        Department itDep = new Department("Information Technology Department");
+        itDep.addUnit(t2);
+        itDep.addUnit(s3);
 
         //college
-        College engineeringCollege = new College("College of Informatics and Computing Studies");
-        engineeringCollege.addUnit(csDepartment);
-        engineeringCollege.addUnit(itDepartment);
+        College collegeCICS = new College("College of Informatics and Computing Studies");
+        collegeCICS.addUnit(csDep);
+        collegeCICS.addUnit(itDep);
 
-        engineeringCollege.displayDetails();
-        System.out.println("\nTotal Students: " + engineeringCollege.getStudentCount());
-        System.out.println("Total Budget: $" + engineeringCollege.getBudget());
+        collegeCICS.displayDetails();
+        System.out.println("\nTotal Students: " + collegeCICS.calculateStudentCount());
+        System.out.println("Total Budget: P" + collegeCICS.calculateBudget());
     }
 }

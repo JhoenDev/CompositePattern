@@ -11,16 +11,16 @@ public class Teacher implements Unit {
 
     @Override
     public void displayDetails() {
-        System.out.println("Teacher: " + name + ", Subject: " + subject + ", Salary: $" + salary);
+        System.out.println("\tTeacher: " + name + "\n \t Subject: " + subject + "\n \t Salary: P" + salary + "\n");
     }
 
     @Override
-    public int getStudentCount() {
+    public int calculateStudentCount() {
         return 0;
     }
 
     @Override
-    public double getBudget() {
+    public double calculateBudget() {
         return salary;
     }
 }

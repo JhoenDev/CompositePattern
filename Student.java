@@ -11,16 +11,16 @@ public class Student implements Unit {
 
     @Override
     public void displayDetails() {
-        System.out.println("Student: " + name + ", ID: " + studentId + ", Tuition Fee: $" + tuitionFee);
+        System.out.println("\tStudent: " + name + "\n \t ID: " + studentId + "\n \t Tuition Fee: P" + tuitionFee + "\n");
     }
 
     @Override
-    public int getStudentCount() {
+    public int calculateStudentCount() {
         return 1;
     }
 
     @Override
-    public double getBudget() {
+    public double calculateBudget() {
         return -tuitionFee;
     }
 }
